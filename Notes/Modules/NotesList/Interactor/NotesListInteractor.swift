@@ -14,7 +14,7 @@ class NotesListInteractor: NotesListInteractorInputProtocol {
     let coreDataController = CoreDataController(persistenceManager: .shared)
     
     var notes: [Note] {
-        return coreDataController.allNotes().map { Note(id: Int($0.id), title: $0.title, detail: $0.detail, date: $0.date) }
+        return coreDataController.allNotes().map { Note(id: $0.id ?? "", title: $0.title, detail: $0.detail, date: $0.date) }
     }
     
     func retrieveNotes() {

@@ -25,7 +25,7 @@ class NotesListViewController: UIViewController, ViewSpecificController, AlertVi
     // MARK: - Actions
     @objc func addAction(sender: UIBarButtonItem) {
         showAlertWithTextField(title: "New Note", message: "Add title and detail", firstPlaceholder: "Title", secondPlaceholder: "Detail") { [weak self] textFrist, textLast in
-            let note = Note(id: self?.notes.count ?? 0, title: textFrist, detail: textLast, date: .now)
+            let note = Note(id: UUID().uuidString, title: textFrist, detail: textLast, date: .now)
             self?.presenter?.addNote(note)
         }
     }

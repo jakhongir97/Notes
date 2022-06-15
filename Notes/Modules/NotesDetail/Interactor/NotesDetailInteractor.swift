@@ -10,18 +10,22 @@ import Foundation
 class NotesDetailInteractor: NotesDetailInteractorInputProtocol {
     
     weak var presenter: NotesDetailInteractorOutputProtocol?
-    var notes = [Note]()
+    
+    let coreDataController = CoreDataController(persistenceManager: .shared)
+    
     var note: Note?
     
     func deleteNote() {
-        guard let _ = note else { return }
+        guard let note = note else { return }
+        coreDataController.removeNote(id: note.id)
         presenter?.didDeleteNote()
     }
     
     func editNote(title: String?, detail: String?) {
-        guard let note = note else { return }
-        self.note?.title = title
-        self.note?.detail = detail
+        guard var note = note else { return }
+        note.title = title
+        note.detail = detail
+        coreDataController.addNote(id: note.id, title: title, detail: detail, date: .now)
         presenter?.didEditNote(note)
     }
 }

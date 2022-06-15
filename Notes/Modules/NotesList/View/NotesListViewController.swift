@@ -18,22 +18,23 @@ class NotesListViewController: UIViewController, ViewSpecificController, AlertVi
     var notes = [Note]() {
         didSet {
             view().tableView.reloadData()
+            view().countLabel.text = "\(notes.count) notes"
         }
     }
     
     // MARK: - Actions
-    @IBAction func addAction(_ sender: UIButton) {
+    @objc func addAction(sender: UIBarButtonItem) {
         showAlertWithTextField(title: "New Note", message: "Add title and detail", firstPlaceholder: "Title", secondPlaceholder: "Detail") { [weak self] textFrist, textLast in
             let note = Note(id: self?.notes.count ?? 0, title: textFrist, detail: textLast, date: .now)
             self?.presenter?.addNote(note)
         }
     }
     
-    
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         appearanceSettings()
+        setupToolBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +48,14 @@ extension NotesListViewController {
     private func appearanceSettings() {
         title = "Notes"
         navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    private func setupToolBar() {
+        navigationController?.setToolbarHidden(false, animated: false)
+        let title =  UIBarButtonItem(customView: view().countLabel)
+        let add = UIBarButtonItem(image: UIImage(systemName: "plus.circle.fill"), style: .plain, target: self, action: #selector(addAction(sender:)))
+        let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        toolbarItems = [spacer, title, spacer, add]
     }
 }
 

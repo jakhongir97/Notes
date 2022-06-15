@@ -24,7 +24,7 @@ class NotesListRouter: NotesListRouterProtocol {
         return notesListViewController
     }
     
-    func presentNotesDetailScreen(from view: NotesListViewProtocol, for note: Note) {
+    func presentNotesDetailScreen(from view: NotesListViewProtocol, for note: Note?) {
         
         let notesDetailViewController = NotesDetailRouter.createNotesDetailRouterModule(with: note)
         

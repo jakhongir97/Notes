@@ -36,6 +36,8 @@
 		A7CB12162859E708007A6BEC /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB12152859E708007A6BEC /* AlertViewController.swift */; };
 		A7CB121A2859EC82007A6BEC /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB12192859EC82007A6BEC /* PersistenceManager.swift */; };
 		A7CB121C2859EC9F007A6BEC /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB121B2859EC9F007A6BEC /* CoreDataController.swift */; };
+		A7CB1223285A036E007A6BEC /* NotesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB1222285A036E007A6BEC /* NotesDetailView.swift */; };
+		A7CB1225285A037B007A6BEC /* NotesDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB1224285A037B007A6BEC /* NotesDetailView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		A7CB12152859E708007A6BEC /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		A7CB12192859EC82007A6BEC /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		A7CB121B2859EC9F007A6BEC /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		A7CB1222285A036E007A6BEC /* NotesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailView.swift; sourceTree = "<group>"; };
+		A7CB1224285A037B007A6BEC /* NotesDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesDetailView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				A7CB11F22859DA52007A6BEC /* NotesDetailViewController.swift */,
+				A7CB1221285A035A007A6BEC /* View */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +357,15 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A7CB1221285A035A007A6BEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB1222285A036E007A6BEC /* NotesDetailView.swift */,
+				A7CB1224285A037B007A6BEC /* NotesDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -414,6 +428,7 @@
 				A7CB11CD2859CC5E007A6BEC /* LaunchScreen.storyboard in Resources */,
 				A7CB11CA2859CC5E007A6BEC /* Assets.xcassets in Resources */,
 				A7CB12142859E602007A6BEC /* NotesListTableViewCell.xib in Resources */,
+				A7CB1225285A037B007A6BEC /* NotesDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +462,7 @@
 				A7CB12162859E708007A6BEC /* AlertViewController.swift in Sources */,
 				A7CB12022859E338007A6BEC /* UIView.swift in Sources */,
 				A7CB11F52859DB00007A6BEC /* NotesDetailInteractor.swift in Sources */,
+				A7CB1223285A036E007A6BEC /* NotesDetailView.swift in Sources */,
 				A7CB11C82859CC5C007A6BEC /* Notes.xcdatamodeld in Sources */,
 				A7CB11E12859D1E2007A6BEC /* NotesListViewController.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NotesListViewController: UIViewController, ViewSpecificController, AlertViewController {
+class NotesListViewController: UIViewController, ViewSpecificController, AlertViewController {    
     // MARK: - Root View
     typealias RootView = NotesListView
     
@@ -21,14 +21,32 @@ class NotesListViewController: UIViewController, ViewSpecificController, AlertVi
         }
     }
     
+    // MARK: - Actions
+    @IBAction func addAction(_ sender: UIButton) {
+        showAlertWithTextField(title: "New Note", message: "Add title and detail", firstPlaceholder: "Title", secondPlaceholder: "Detail") { [weak self] textFrist, textLast in
+            let note = Note(id: self?.notes.count ?? 0, title: textFrist, detail: textLast, date: .now)
+            self?.presenter?.addNote(note)
+        }
+    }
+    
+    
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        appearanceSettings()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.viewWillAppear()
+    }
+}
+
+// MARK: - Other funcs
+extension NotesListViewController {
+    private func appearanceSettings() {
+        title = "Notes"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 
@@ -55,6 +73,12 @@ extension NotesListViewController: UITableViewDataSource {
         cell.titleLabel.text = note.title
         cell.detailLabel.text = note.detail
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else { return }
+        let note = notes[indexPath.row]
+        presenter?.removeNote(note)
     }
 }
 

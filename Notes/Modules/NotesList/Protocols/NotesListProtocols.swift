@@ -48,5 +48,5 @@ protocol NotesListRouterProtocol: AnyObject {
     
     static func createNotesListModule() -> UIViewController
     
-    func presentNotesDetailScreen(from view: NotesListViewProtocol, for note: Note)
+    func presentNotesDetailScreen(from view: NotesListViewProtocol, for note: Note?)
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class NotesDetailRouter: NotesDetailRouterProtocol {
     
-    static func createNotesDetailRouterModule(with note: Note) -> UIViewController {
+    static func createNotesDetailRouterModule(with note: Note?) -> UIViewController {
         let notesDetailViewController = NotesDetailViewController()
         
         let presenter: NotesDetailPresenter & NotesDetailInteractorOutputProtocol = NotesDetailPresenter()

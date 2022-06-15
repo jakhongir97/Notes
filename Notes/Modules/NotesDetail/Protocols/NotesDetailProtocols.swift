@@ -42,7 +42,7 @@ protocol NotesDetailInteractorOutputProtocol: AnyObject {
 
 protocol NotesDetailRouterProtocol: AnyObject {
     
-    static func createNotesDetailRouterModule(with note: Note) -> UIViewController
+    static func createNotesDetailRouterModule(with note: Note?) -> UIViewController
     
     func navigationBackToNotesListViewController(from view: NotesDetailViewProtocol)
 }

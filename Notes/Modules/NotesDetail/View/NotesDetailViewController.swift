@@ -7,21 +7,25 @@
 
 import UIKit
 
-class NotesDetailViewController: UIViewController {
+class NotesDetailViewController: UIViewController, ViewSpecificController {
+    // MARK: - Root View
+    typealias RootView = NotesDetailView
     
+    // MARK: - Interface
     var presenter: NotesDetailPresenterProtocol?
-    
-    var note: Note?
-    
+
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
     }
 }
 
+// MARK: - NotesDetailViewProtocol
 extension NotesDetailViewController: NotesDetailViewProtocol {
     
     func showNote(_ note: Note) {
-        self.note = note
+        view().titleTextField.text = note.title
+        view().detailTextField.text = note.detail
     }
 }

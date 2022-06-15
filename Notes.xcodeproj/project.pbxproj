@@ -10,10 +10,20 @@
 		A7CB11BE2859CC5C007A6BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11BD2859CC5C007A6BEC /* AppDelegate.swift */; };
 		A7CB11C02859CC5C007A6BEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11BF2859CC5C007A6BEC /* SceneDelegate.swift */; };
 		A7CB11C22859CC5C007A6BEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11C12859CC5C007A6BEC /* ViewController.swift */; };
-		A7CB11C52859CC5C007A6BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CB11C32859CC5C007A6BEC /* Main.storyboard */; };
 		A7CB11C82859CC5C007A6BEC /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11C62859CC5C007A6BEC /* Notes.xcdatamodeld */; };
 		A7CB11CA2859CC5E007A6BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CB11C92859CC5E007A6BEC /* Assets.xcassets */; };
 		A7CB11CD2859CC5E007A6BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CB11CB2859CC5E007A6BEC /* LaunchScreen.storyboard */; };
+		A7CB11DD2859CEB2007A6BEC /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11DC2859CEB2007A6BEC /* Note.swift */; };
+		A7CB11DF2859CF09007A6BEC /* NotesListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11DE2859CF09007A6BEC /* NotesListProtocols.swift */; };
+		A7CB11E12859D1E2007A6BEC /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11E02859D1E2007A6BEC /* NotesListViewController.swift */; };
+		A7CB11E32859D306007A6BEC /* NotesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11E22859D306007A6BEC /* NotesListInteractor.swift */; };
+		A7CB11E52859D3F5007A6BEC /* NotesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11E42859D3F5007A6BEC /* NotesListPresenter.swift */; };
+		A7CB11E72859D50C007A6BEC /* NotesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11E62859D50C007A6BEC /* NotesListRouter.swift */; };
+		A7CB11EF2859D7BA007A6BEC /* NotesDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11EE2859D7BA007A6BEC /* NotesDetailProtocols.swift */; };
+		A7CB11F12859D9E0007A6BEC /* NotesDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11F02859D9E0007A6BEC /* NotesDetailRouter.swift */; };
+		A7CB11F32859DA52007A6BEC /* NotesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11F22859DA52007A6BEC /* NotesDetailViewController.swift */; };
+		A7CB11F52859DB00007A6BEC /* NotesDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11F42859DB00007A6BEC /* NotesDetailInteractor.swift */; };
+		A7CB11F72859DC79007A6BEC /* NotesDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11F62859DC79007A6BEC /* NotesDetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +31,21 @@
 		A7CB11BD2859CC5C007A6BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CB11BF2859CC5C007A6BEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A7CB11C12859CC5C007A6BEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7CB11C42859CC5C007A6BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7CB11C72859CC5C007A6BEC /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		A7CB11C92859CC5E007A6BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CB11CC2859CC5E007A6BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7CB11CE2859CC5E007A6BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7CB11DC2859CEB2007A6BEC /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		A7CB11DE2859CF09007A6BEC /* NotesListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListProtocols.swift; sourceTree = "<group>"; };
+		A7CB11E02859D1E2007A6BEC /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
+		A7CB11E22859D306007A6BEC /* NotesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListInteractor.swift; sourceTree = "<group>"; };
+		A7CB11E42859D3F5007A6BEC /* NotesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListPresenter.swift; sourceTree = "<group>"; };
+		A7CB11E62859D50C007A6BEC /* NotesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListRouter.swift; sourceTree = "<group>"; };
+		A7CB11EE2859D7BA007A6BEC /* NotesDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailProtocols.swift; sourceTree = "<group>"; };
+		A7CB11F02859D9E0007A6BEC /* NotesDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailRouter.swift; sourceTree = "<group>"; };
+		A7CB11F22859DA52007A6BEC /* NotesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailViewController.swift; sourceTree = "<group>"; };
+		A7CB11F42859DB00007A6BEC /* NotesDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailInteractor.swift; sourceTree = "<group>"; };
+		A7CB11F62859DC79007A6BEC /* NotesDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +78,138 @@
 		A7CB11BC2859CC5C007A6BEC /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				A7CB11D42859CE10007A6BEC /* NotesList */,
+				A7CB11D52859CE28007A6BEC /* NotesDetail */,
 				A7CB11BD2859CC5C007A6BEC /* AppDelegate.swift */,
 				A7CB11BF2859CC5C007A6BEC /* SceneDelegate.swift */,
 				A7CB11C12859CC5C007A6BEC /* ViewController.swift */,
-				A7CB11C32859CC5C007A6BEC /* Main.storyboard */,
 				A7CB11C92859CC5E007A6BEC /* Assets.xcassets */,
 				A7CB11CB2859CC5E007A6BEC /* LaunchScreen.storyboard */,
 				A7CB11CE2859CC5E007A6BEC /* Info.plist */,
 				A7CB11C62859CC5C007A6BEC /* Notes.xcdatamodeld */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		A7CB11D42859CE10007A6BEC /* NotesList */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11D62859CE49007A6BEC /* View */,
+				A7CB11DA2859CE73007A6BEC /* Interactor */,
+				A7CB11D72859CE4E007A6BEC /* Presenter */,
+				A7CB11DB2859CE80007A6BEC /* Entity */,
+				A7CB11D82859CE5A007A6BEC /* Router */,
+				A7CB11D92859CE69007A6BEC /* Protocols */,
+			);
+			path = NotesList;
+			sourceTree = "<group>";
+		};
+		A7CB11D52859CE28007A6BEC /* NotesDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11ED2859D796007A6BEC /* View */,
+				A7CB11EC2859D78B007A6BEC /* Interactor */,
+				A7CB11EB2859D781007A6BEC /* Presenter */,
+				A7CB11EA2859D776007A6BEC /* Entity */,
+				A7CB11E92859D76E007A6BEC /* Router */,
+				A7CB11E82859D756007A6BEC /* Protocols */,
+			);
+			path = NotesDetail;
+			sourceTree = "<group>";
+		};
+		A7CB11D62859CE49007A6BEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11E02859D1E2007A6BEC /* NotesListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7CB11D72859CE4E007A6BEC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11E42859D3F5007A6BEC /* NotesListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A7CB11D82859CE5A007A6BEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11E62859D50C007A6BEC /* NotesListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A7CB11D92859CE69007A6BEC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11DE2859CF09007A6BEC /* NotesListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A7CB11DA2859CE73007A6BEC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11E22859D306007A6BEC /* NotesListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A7CB11DB2859CE80007A6BEC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11DC2859CEB2007A6BEC /* Note.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A7CB11E82859D756007A6BEC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11EE2859D7BA007A6BEC /* NotesDetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A7CB11E92859D76E007A6BEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11F02859D9E0007A6BEC /* NotesDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A7CB11EA2859D776007A6BEC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A7CB11EB2859D781007A6BEC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11F62859DC79007A6BEC /* NotesDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A7CB11EC2859D78B007A6BEC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11F42859DB00007A6BEC /* NotesDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A7CB11ED2859D796007A6BEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11F22859DA52007A6BEC /* NotesDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +272,6 @@
 			files = (
 				A7CB11CD2859CC5E007A6BEC /* LaunchScreen.storyboard in Resources */,
 				A7CB11CA2859CC5E007A6BEC /* Assets.xcassets in Resources */,
-				A7CB11C52859CC5C007A6BEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +282,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CB11F72859DC79007A6BEC /* NotesDetailPresenter.swift in Sources */,
+				A7CB11E52859D3F5007A6BEC /* NotesListPresenter.swift in Sources */,
+				A7CB11DD2859CEB2007A6BEC /* Note.swift in Sources */,
+				A7CB11E72859D50C007A6BEC /* NotesListRouter.swift in Sources */,
+				A7CB11EF2859D7BA007A6BEC /* NotesDetailProtocols.swift in Sources */,
 				A7CB11C22859CC5C007A6BEC /* ViewController.swift in Sources */,
 				A7CB11BE2859CC5C007A6BEC /* AppDelegate.swift in Sources */,
+				A7CB11F32859DA52007A6BEC /* NotesDetailViewController.swift in Sources */,
+				A7CB11DF2859CF09007A6BEC /* NotesListProtocols.swift in Sources */,
+				A7CB11F12859D9E0007A6BEC /* NotesDetailRouter.swift in Sources */,
+				A7CB11E32859D306007A6BEC /* NotesListInteractor.swift in Sources */,
 				A7CB11C02859CC5C007A6BEC /* SceneDelegate.swift in Sources */,
+				A7CB11F52859DB00007A6BEC /* NotesDetailInteractor.swift in Sources */,
 				A7CB11C82859CC5C007A6BEC /* Notes.xcdatamodeld in Sources */,
+				A7CB11E12859D1E2007A6BEC /* NotesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A7CB11C32859CC5C007A6BEC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7CB11C42859CC5C007A6BEC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7CB11CB2859CC5E007A6BEC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +440,6 @@
 				INFOPLIST_FILE = Notes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +467,6 @@
 				INFOPLIST_FILE = Notes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

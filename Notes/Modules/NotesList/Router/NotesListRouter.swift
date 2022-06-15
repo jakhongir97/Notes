@@ -28,7 +28,7 @@ class NotesListRouter: NotesListRouterProtocol {
         
         let notesDetailViewController = NotesDetailRouter.createNotesDetailRouterModule(with: note)
         
-        guard let vc = view as? ViewController else { return }
+        guard let vc = view as? UIViewController else { return }
         vc.navigationController?.pushViewController(notesDetailViewController, animated: true)
     }
 }

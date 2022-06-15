@@ -11,18 +11,23 @@ class NotesListInteractor: NotesListInteractorInputProtocol {
     
     weak var presenter: NotesListInteractorOutputProtocol?
     
-    var notes = [Note]()
+    let coreDataController = CoreDataController(persistenceManager: .shared)
+    
+    var notes: [Note] {
+        return coreDataController.allNotes().map { Note(id: Int($0.id), title: $0.title, detail: $0.detail, date: $0.date) }
+    }
     
     func retrieveNotes() {
         presenter?.didRetrieveNotes(notes)
     }
     
     func saveNote(_ note: Note) {
-        notes.append(note)
+        coreDataController.addNote(id: note.id, title: note.title, detail: note.detail, date: note.date)
         presenter?.didAddNote(note)
     }
     
     func deleteNote(_ note: Note) {
+        coreDataController.removeNote(id: note.id)
         presenter?.didRemoveNote(note)
     }
 }

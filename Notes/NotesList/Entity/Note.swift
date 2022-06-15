@@ -8,6 +8,8 @@
 import Foundation
 
 struct Note {
+    var id: Int
     var title: String?
     var detail: String?
+    var date: Date?
 }

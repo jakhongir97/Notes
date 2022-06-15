@@ -24,6 +24,19 @@
 		A7CB11F32859DA52007A6BEC /* NotesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11F22859DA52007A6BEC /* NotesDetailViewController.swift */; };
 		A7CB11F52859DB00007A6BEC /* NotesDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11F42859DB00007A6BEC /* NotesDetailInteractor.swift */; };
 		A7CB11F72859DC79007A6BEC /* NotesDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11F62859DC79007A6BEC /* NotesDetailPresenter.swift */; };
+		A7CB11F92859E21F007A6BEC /* NotesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB11F82859E21F007A6BEC /* NotesListView.xib */; };
+		A7CB12002859E30A007A6BEC /* ViewSpecificController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB11FF2859E30A007A6BEC /* ViewSpecificController.swift */; };
+		A7CB12022859E338007A6BEC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB12012859E338007A6BEC /* UIView.swift */; };
+		A7CB12042859E35D007A6BEC /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB12032859E35D007A6BEC /* ReusableView.swift */; };
+		A7CB12062859E38C007A6BEC /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB12052859E38C007A6BEC /* NotesListView.swift */; };
+		A7CB12092859E3BB007A6BEC /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB12082859E3BB007A6BEC /* CustomView.swift */; };
+		A7CB120B2859E3D0007A6BEC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB120A2859E3D0007A6BEC /* UIColor.swift */; };
+		A7CB120E2859E3F1007A6BEC /* AssetsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB120D2859E3F1007A6BEC /* AssetsColor.swift */; };
+		A7CB12132859E602007A6BEC /* NotesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB12112859E602007A6BEC /* NotesListTableViewCell.swift */; };
+		A7CB12142859E602007A6BEC /* NotesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB12122859E602007A6BEC /* NotesListTableViewCell.xib */; };
+		A7CB12162859E708007A6BEC /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB12152859E708007A6BEC /* AlertViewController.swift */; };
+		A7CB121A2859EC82007A6BEC /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB12192859EC82007A6BEC /* PersistenceManager.swift */; };
+		A7CB121C2859EC9F007A6BEC /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB121B2859EC9F007A6BEC /* CoreDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +59,19 @@
 		A7CB11F22859DA52007A6BEC /* NotesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailViewController.swift; sourceTree = "<group>"; };
 		A7CB11F42859DB00007A6BEC /* NotesDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailInteractor.swift; sourceTree = "<group>"; };
 		A7CB11F62859DC79007A6BEC /* NotesDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailPresenter.swift; sourceTree = "<group>"; };
+		A7CB11F82859E21F007A6BEC /* NotesListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesListView.xib; sourceTree = "<group>"; };
+		A7CB11FF2859E30A007A6BEC /* ViewSpecificController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSpecificController.swift; sourceTree = "<group>"; };
+		A7CB12012859E338007A6BEC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A7CB12032859E35D007A6BEC /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		A7CB12052859E38C007A6BEC /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
+		A7CB12082859E3BB007A6BEC /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		A7CB120A2859E3D0007A6BEC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A7CB120D2859E3F1007A6BEC /* AssetsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsColor.swift; sourceTree = "<group>"; };
+		A7CB12112859E602007A6BEC /* NotesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB12122859E602007A6BEC /* NotesListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesListTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB12152859E708007A6BEC /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		A7CB12192859EC82007A6BEC /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		A7CB121B2859EC9F007A6BEC /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +88,7 @@
 		A7CB11B12859CC5C007A6BEC = {
 			isa = PBXGroup;
 			children = (
+				A7CB11FA2859E280007A6BEC /* Common */,
 				A7CB11BC2859CC5C007A6BEC /* Notes */,
 				A7CB11BB2859CC5C007A6BEC /* Products */,
 			);
@@ -121,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				A7CB11E02859D1E2007A6BEC /* NotesListViewController.swift */,
+				A7CB120F2859E5C1007A6BEC /* View */,
+				A7CB12102859E5D6007A6BEC /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +241,88 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A7CB11FA2859E280007A6BEC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB120C2859E3DA007A6BEC /* Constants */,
+				A7CB12072859E3AE007A6BEC /* Classes */,
+				A7CB11FE2859E2A3007A6BEC /* Extensions */,
+				A7CB11FD2859E293007A6BEC /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A7CB11FD2859E293007A6BEC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB11FF2859E30A007A6BEC /* ViewSpecificController.swift */,
+				A7CB12032859E35D007A6BEC /* ReusableView.swift */,
+				A7CB12152859E708007A6BEC /* AlertViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A7CB11FE2859E2A3007A6BEC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB12012859E338007A6BEC /* UIView.swift */,
+				A7CB120A2859E3D0007A6BEC /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7CB12072859E3AE007A6BEC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB12182859EC6C007A6BEC /* Core Data */,
+				A7CB12172859EC64007A6BEC /* Custom UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A7CB120C2859E3DA007A6BEC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB120D2859E3F1007A6BEC /* AssetsColor.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A7CB120F2859E5C1007A6BEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB12052859E38C007A6BEC /* NotesListView.swift */,
+				A7CB11F82859E21F007A6BEC /* NotesListView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7CB12102859E5D6007A6BEC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB12112859E602007A6BEC /* NotesListTableViewCell.swift */,
+				A7CB12122859E602007A6BEC /* NotesListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A7CB12172859EC64007A6BEC /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB12082859E3BB007A6BEC /* CustomView.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		A7CB12182859EC6C007A6BEC /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB12192859EC82007A6BEC /* PersistenceManager.swift */,
+				A7CB121B2859EC9F007A6BEC /* CoreDataController.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,8 +381,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CB11F92859E21F007A6BEC /* NotesListView.xib in Resources */,
 				A7CB11CD2859CC5E007A6BEC /* LaunchScreen.storyboard in Resources */,
 				A7CB11CA2859CC5E007A6BEC /* Assets.xcassets in Resources */,
+				A7CB12142859E602007A6BEC /* NotesListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,17 +396,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7CB11F72859DC79007A6BEC /* NotesDetailPresenter.swift in Sources */,
+				A7CB121A2859EC82007A6BEC /* PersistenceManager.swift in Sources */,
+				A7CB120B2859E3D0007A6BEC /* UIColor.swift in Sources */,
 				A7CB11E52859D3F5007A6BEC /* NotesListPresenter.swift in Sources */,
 				A7CB11DD2859CEB2007A6BEC /* Note.swift in Sources */,
 				A7CB11E72859D50C007A6BEC /* NotesListRouter.swift in Sources */,
+				A7CB12132859E602007A6BEC /* NotesListTableViewCell.swift in Sources */,
 				A7CB11EF2859D7BA007A6BEC /* NotesDetailProtocols.swift in Sources */,
+				A7CB121C2859EC9F007A6BEC /* CoreDataController.swift in Sources */,
+				A7CB12092859E3BB007A6BEC /* CustomView.swift in Sources */,
 				A7CB11C22859CC5C007A6BEC /* ViewController.swift in Sources */,
 				A7CB11BE2859CC5C007A6BEC /* AppDelegate.swift in Sources */,
 				A7CB11F32859DA52007A6BEC /* NotesDetailViewController.swift in Sources */,
 				A7CB11DF2859CF09007A6BEC /* NotesListProtocols.swift in Sources */,
+				A7CB12042859E35D007A6BEC /* ReusableView.swift in Sources */,
 				A7CB11F12859D9E0007A6BEC /* NotesDetailRouter.swift in Sources */,
 				A7CB11E32859D306007A6BEC /* NotesListInteractor.swift in Sources */,
+				A7CB120E2859E3F1007A6BEC /* AssetsColor.swift in Sources */,
+				A7CB12062859E38C007A6BEC /* NotesListView.swift in Sources */,
 				A7CB11C02859CC5C007A6BEC /* SceneDelegate.swift in Sources */,
+				A7CB12002859E30A007A6BEC /* ViewSpecificController.swift in Sources */,
+				A7CB12162859E708007A6BEC /* AlertViewController.swift in Sources */,
+				A7CB12022859E338007A6BEC /* UIView.swift in Sources */,
 				A7CB11F52859DB00007A6BEC /* NotesDetailInteractor.swift in Sources */,
 				A7CB11C82859CC5C007A6BEC /* Notes.xcdatamodeld in Sources */,
 				A7CB11E12859D1E2007A6BEC /* NotesListViewController.swift in Sources */,
